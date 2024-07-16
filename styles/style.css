@@ -44,6 +44,8 @@ section{
 }
 h1 {
     font-size: var(--header-font-size);
+    color: var(--dark-1);
+    font-weight: 800;
 }
 input:focus,select:focus {
     outline: 1px solid var(--primary-color);
@@ -54,6 +56,7 @@ header > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .navLogo {
@@ -133,7 +136,33 @@ header > nav {
 .hero-section form input:last-child{
     color: white;
 }
-
+/* Popular tours section */
+.popular-tours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.popular-tours-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.popular-tours-details p {
+    color: var(--dark-2);
+    font-size: 0.9rem;
+}
+.popular-tours-details ::marker {
+    color: var(--dark-2);
+}
+.popular-tours-details > ul {
+    margin-left: 5%;
+}
+.popular-tours-img img{
+    width: 100%;
+}
 
 
 /* Mobile screen */
@@ -150,6 +179,15 @@ header > nav {
     }
     .hero-section form {
         flex-direction: column;
+    }
+    /* Popular tours section */
+    .popular-tours {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .popular-tours-details{
+        width: 100%;
     }
 
 }

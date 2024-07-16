@@ -347,6 +347,35 @@ header > nav {
     justify-content: center;
     gap: 30px;
 }
+.about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.about-img img {
+    width: 100%;
+}
+.about-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-details button{
+    width: 150px;
+}
+.about-details > p {
+    color: var(--dark-2);
+    font-size: 0.9rem;
+}
+.about-details ul {
+    margin-left: 30px;
+}
+.about-details ul li p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 
 
 
@@ -355,7 +384,9 @@ header > nav {
 /* Mobile screen */
 
 @media screen and (max-width:576px) {
-    
+    body {
+        padding: 0 10px;
+    }
     /* Header styles */
     .hero-section {
         background-size: cover;
@@ -397,6 +428,9 @@ header > nav {
     .discount-card-details {
         width: 90%;
         margin: auto;
+    }
+    .about {
+        grid-template-columns: 1fr;
     }
     
 

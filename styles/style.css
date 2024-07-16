@@ -33,6 +33,7 @@ body {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    font-weight: 600;
 }
 button > a {
     color: white;
@@ -376,6 +377,71 @@ header > nav {
     font-weight: bold;
     font-size: 0.9rem;
 }
+/* Newsletter section */
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+.newsletter-form {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+.newsletter-form p {
+    color: var(--dark-2);
+    font-size: 0.9rem;
+}
+.newsletter-form hr {
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.newsletter-form form input {
+    width: 100%;
+    padding: 15px;
+}
+
+#inputName , #inputEmail {
+    background-color: rgba(19, 19, 24, 0.05);
+    color: var(--dark-2);
+    border: none;
+    border-radius: 8px;
+}
+.newsletter-img img {
+    width: 100%;
+}
+.newsletter-img {
+    position: relative;
+}
+.save-70-card {
+    background-color: var(--primary-color);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    transform: rotate(-43deg);
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+}
+.save-70-card a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.save-70-card h1 {
+    color: white;
+    font-size: 1.2rem;
+}
 
 
 
@@ -429,7 +495,12 @@ header > nav {
         width: 90%;
         margin: auto;
     }
+    /* About */
     .about {
+        grid-template-columns: 1fr;
+    }
+    /* Newsletter */
+    .newsletter{
         grid-template-columns: 1fr;
     }
     

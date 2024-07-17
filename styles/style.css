@@ -12,9 +12,6 @@ body,main {
     max-width: 1200px;
     margin: auto;
 }
-body {
-    border: 2px solid black;
-}
 
 :root {
     --primary-color : #FF5400;
@@ -441,6 +438,45 @@ header > nav {
 .save-70-card h1 {
     color: white;
     font-size: 1.2rem;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.footer-logo > h1 > span {
+    color: var(--primary-color);
+}
+footer > p {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    color: var(--dark-2);
+    font-size: 0.9rem;
+
+}
+.social-icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+footer .line {
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    width: 70%;
+    margin-top: 20px;
 }
 
 

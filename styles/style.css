@@ -50,6 +50,9 @@ input:focus,select:focus {
 }
 
 /* Nav bar styles */
+.menu-bar-icon {
+    display: none;
+}
 header > nav {
     display: flex;
     align-items: center;
@@ -66,6 +69,9 @@ header > nav {
 .navLogo > h1 {
     font-size: var(--header-font-size);
     font-weight: 900;
+}
+.menu-bar-icon img {
+    width: 100%;
 }
 .navLogo img {
     width: 48px;
@@ -479,7 +485,12 @@ footer .line {
     margin-top: 20px;
 }
 
-
+.show-nav-item {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -490,6 +501,29 @@ footer .line {
         padding: 0 10px;
     }
     /* Header styles */
+    .menu-bar-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .hide {
+        display: none;
+    }
+    header nav .navItems ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        gap: 40px;
+    }
+   
     .hero-section {
         background-size: cover;
         background-position: center;
